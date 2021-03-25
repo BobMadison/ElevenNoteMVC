@@ -55,12 +55,36 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IdentityModels.cs" />
+    <Compile Include="Migrations\202103052111066_InitialCreate.cs" />
+    <Compile Include="Migrations\202103052111066_InitialCreate.Designer.cs">
+      <DependentUpon>202103052111066_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202103250229431_StarredNotes.cs" />
+    <Compile Include="Migrations\202103250229431_StarredNotes.Designer.cs">
+      <DependentUpon>202103250229431_StarredNotes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202103250240024_StarredTwo.cs" />
+    <Compile Include="Migrations\202103250240024_StarredTwo.Designer.cs">
+      <DependentUpon>202103250240024_StarredTwo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Note.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202103052111066_InitialCreate.resx">
+      <DependentUpon>202103052111066_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103250229431_StarredNotes.resx">
+      <DependentUpon>202103250229431_StarredNotes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103250240024_StarredTwo.resx">
+      <DependentUpon>202103250240024_StarredTwo.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
